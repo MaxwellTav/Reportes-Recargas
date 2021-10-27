@@ -33,7 +33,7 @@ namespace Reportes_Recargas
             this.Form_Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Password_Textbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.User_Textbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.Login_Button = new Guna.UI2.WinForms.Guna2Button();
             this.PanelForm_Control = new System.Windows.Forms.FlowLayoutPanel();
             this.Exit_Button = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Minimize_Button = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -101,22 +101,23 @@ namespace Reportes_Recargas
             this.User_Textbox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.User_Textbox.TabIndex = 0;
             // 
-            // guna2Button1
+            // Login_Button
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 394);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(420, 96);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "Iniciar Sesión";
+            this.Login_Button.Animated = true;
+            this.Login_Button.CheckedState.Parent = this.Login_Button;
+            this.Login_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Login_Button.CustomImages.Parent = this.Login_Button;
+            this.Login_Button.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Login_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.Login_Button.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_Button.ForeColor = System.Drawing.Color.White;
+            this.Login_Button.HoverState.Parent = this.Login_Button;
+            this.Login_Button.Location = new System.Drawing.Point(0, 336);
+            this.Login_Button.Name = "Login_Button";
+            this.Login_Button.ShadowDecoration.Parent = this.Login_Button;
+            this.Login_Button.Size = new System.Drawing.Size(420, 154);
+            this.Login_Button.TabIndex = 1;
+            this.Login_Button.Text = "Iniciar Sesión";
             // 
             // PanelForm_Control
             // 
@@ -133,7 +134,7 @@ namespace Reportes_Recargas
             // Exit_Button
             // 
             this.Exit_Button.CheckedState.Parent = this.Exit_Button;
-            this.Exit_Button.Cursor = System.Windows.Forms.Cursors.No;
+            this.Exit_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Exit_Button.CustomImages.Parent = this.Exit_Button;
             this.Exit_Button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Exit_Button.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -171,6 +172,7 @@ namespace Reportes_Recargas
             this.Rezise_Button.CheckedState.InnerColor = System.Drawing.Color.White;
             this.Rezise_Button.CheckedState.Parent = this.Rezise_Button;
             this.Rezise_Button.Cursor = System.Windows.Forms.Cursors.NoMove2D;
+            this.Rezise_Button.Enabled = false;
             this.Rezise_Button.Location = new System.Drawing.Point(3, 3);
             this.Rezise_Button.Name = "Rezise_Button";
             this.Rezise_Button.ShadowDecoration.Parent = this.Rezise_Button;
@@ -200,7 +202,7 @@ namespace Reportes_Recargas
             this.ClientSize = new System.Drawing.Size(420, 490);
             this.Controls.Add(this.PanelForm_Control);
             this.Controls.Add(this.Title_Label);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.Login_Button);
             this.Controls.Add(this.User_Textbox);
             this.Controls.Add(this.Password_Textbox);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -208,6 +210,7 @@ namespace Reportes_Recargas
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "LoginForm";
+            this.Opacity = 0.85D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.PanelForm_Control.ResumeLayout(false);
@@ -224,7 +227,7 @@ namespace Reportes_Recargas
         private Guna.UI2.WinForms.Guna2CircleButton Minimize_Button;
         private Guna.UI2.WinForms.Guna2ToggleSwitch Rezise_Button;
         private System.Windows.Forms.Label Title_Label;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button Login_Button;
         private Guna.UI2.WinForms.Guna2TextBox User_Textbox;
     }
 }
